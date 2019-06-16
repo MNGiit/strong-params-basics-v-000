@@ -1,6 +1,9 @@
 class Post < ActiveRecord::Base
   # app/controllers/posts_controller.rb
- 
+  
+  def new
+  end
+  
   def create
     @post = Post.new(post_params(:title, :description))
     @post.save
